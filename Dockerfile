@@ -1,2 +1,4 @@
 FROM ubuntu:latest
-RUN apt update
+RUN apt-get update && apt-get install -y build-essential
+WORKDIR /home
+COPY / /home
